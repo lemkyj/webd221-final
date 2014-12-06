@@ -1,0 +1,362 @@
+
+
+// ------------------------------------------------------------------------------------------
+// Index Page -
+// ---------------------------
+
+	// section Slide
+	// -----------------
+
+
+section#slider {
+	height: 490px;
+	background: url("../img/bg10.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	text-align: center;
+	
+	.headertext {
+		padding-top: 150px;
+	}
+	
+	h1 {
+		.ubuntu500();
+		display: inline-block;
+		color: @white;
+		font-size: @large-size;
+		padding: 16px 60px 16px;
+		background-color: rgba(0, 0, 0, 0.6);	
+	}
+
+	h4 {
+		display: inline-block;
+		color: @white;
+		margin-top: 45px;
+		font-size: @large-size - 4px;
+		padding: 16px 60px 16px;
+		background-color: rgba(0, 0, 0, 0.6);	
+	}
+
+}
+
+section#extrainfo {
+	height: 100px;
+	background: @orange;
+	text-align: center;
+		p {
+		margin: 0;
+		.ubuntu400();
+		padding-top: 40px;
+		color:@white;
+		font-size: @normal-size + 4px;
+			span {
+				.ubuntu500();
+				text-docoration: underline;
+				text-transform: uppercase;
+				font-size: @large-size - 2px; 
+			}
+		}
+	}
+
+
+
+	// section Ui Brush + Recent Projects
+	// -----------------
+
+
+section#uibrush {
+	h2 {
+		padding-top: 55px;
+	}
+
+	p {
+		padding: 45px 0 0 0;
+		max-width: 1120px;
+		margin: 0 auto;
+		text-align: center;			
+		font-size: @normal-size;
+
+	}
+
+	ul {
+		text-align: center;
+		li {
+
+			.column(3);
+			padding-top: 65px;
+			i {
+				color: @orange;
+			}
+
+			h3 {
+				font-size: @normal-size + 4px;
+			}
+			p {
+				font-size: @small-size - 2px;
+				padding: 0 0 55px 0;
+				max-width: 225px;
+				margin: 0 auto;
+				text-align: left;
+
+			}
+		}
+	}
+}
+
+
+section#recent {
+	
+	h2 {
+		padding: 50px 0 5px 0;
+	}
+
+	p {
+		margin: 0 auto;
+		text-align: center;
+		max-width: 675px;
+		font-size: @normal-size;
+		padding: 30px 0 35px 0;
+	}
+
+	ul {
+
+		li {
+			.column(3);
+			padding-bottom: 100px;
+			
+
+			.cover {
+				padding: 0;
+				margin: 0;
+				background: @lightgray;
+				width: 251px;
+				height: 230px;
+
+				h4 {
+					margin: 0;
+					padding: 0 20px 0 0;
+					color: @orange;
+					text-align: right;
+					&:after {
+		
+
+					}
+				}	
+
+
+				.line {
+					display: block;
+				    height: 1px;
+				    width: 85%;
+				    margin: 0 auto;
+				    margin-top: 5px;
+				    border: 0;
+				    border-top: 1px solid @puregray;
+				    padding: 0;
+				}
+				p {
+					padding:3px 20px 0 0;
+					margin: 0 0 0 0;
+					text-align: right;
+					color: @black;
+				}
+			}
+		}
+	}
+}
+
+
+
+//-------------------------------------------------------------------------
+// MEDIA QUERIES 
+//----------------------------
+// Portrait tablet and small desktops
+
+//----------------------------
+// Index.html
+//----------------------------
+
+@media (max-width: 1030px) {
+
+
+	section#recent {
+		
+		ul {
+
+			li {
+				.column(4);
+
+			}
+		}
+	}
+
+}
+
+
+@media (max-width: 780px) {
+
+
+section#slider {
+	height: auto;
+	
+	.headertext {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	
+	h1 {
+		font-size: @large-size - 4px;
+		padding: 5px 60px 5px;
+	}
+
+	h4 {
+
+		font-size: @large-size - 7px;
+		padding: 5px 60px 5px;
+	}
+
+}
+
+section#extrainfo {
+	height: auto;
+	padding-bottom: 25px;
+		p {
+		padding-top: 20px;
+		font-size: @normal-size - 2px;
+			span {
+				font-size: @large-size - 8px; 
+			}
+		}
+	}
+
+
+section#uibrush {
+
+	h2 {
+		padding-top: 25px;
+		font-size: @large-size - 3px;
+		padding-bottom: 10
+	}
+
+	p {
+		padding: 15px 0 0 0;
+		font-size: @normal-size - 2px;
+
+	}
+
+	ul {
+		li {
+
+			.column(6);
+			padding-top: 35px;
+			
+
+			h3 {
+				font-size: @normal-size + 2px;
+			}
+
+			p {
+				font-size: @small-size;
+				padding: 0 0 5px 0;
+			}
+		}
+	}
+}
+
+section#recent {
+	
+	ul {
+
+		li {
+			.column(6);
+
+
+			.cover {
+				margin: 0 auto;
+
+				}
+			}
+		}
+	}
+
+}
+
+
+
+
+@media (max-width: 524px) {
+
+section#recent {
+	
+	ul {
+
+		li {
+			.column(12);
+
+
+
+			.cover {
+				margin: 0 auto;
+
+				}
+			}
+		}
+	}
+
+
+
+
+}
+
+
+@media (max-width: 480px) {
+
+section#extrainfo {
+	height: auto;
+		p {
+		padding-top: 20px;
+		font-size: @normal-size - 4px;
+			span {
+				font-size: @large-size - 10px; 
+				padding-bottom: 15px;
+			}
+		}
+	}
+
+section#uibrush {
+
+	h2 {
+		padding-top: 25px;
+	}
+
+	p {
+		padding: 15px 0 0 0;
+		font-size: @normal-size - 2px;
+		max-width: 375px;
+
+	}
+
+	ul {
+		li {
+
+			.column(12);
+			padding-top: 35px;
+			
+
+			h3 {
+				font-size: @normal-size + 2px;
+			}
+
+			p {
+				font-size: @small-size;
+				padding: 0 0 5px 0;
+				max-width: 280px;
+			}
+		}
+	}
+}
+
+
+}

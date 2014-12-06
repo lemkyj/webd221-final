@@ -1,0 +1,261 @@
+
+
+
+// ------------------------------------------------------------------------------------------
+// Portfolio Page -
+// ---------------------------
+
+
+	// section OurWorks
+	// -----------------
+
+
+
+section#OurWorks {
+	height: 450px;
+	// background: @light-orange;
+	background: url("../img/bg3.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	text-align: center;
+
+	p {
+		color: white;
+		font-size: @normal-size;
+	}
+	h1 {
+		padding-top: 120px;
+		margin-bottom: 25px;
+	
+	}
+}
+
+
+	// section Our Portfolio
+	// ----------------------
+
+
+
+section#Portfolio {
+	h2 {
+	padding-top: 35px;
+	padding-bottom: 30px;
+	}
+
+	p {
+		font-size: @normal-size;
+		padding-bottom: 60px;
+		max-width: 1155px;
+		margin: 0 auto;
+		text-align: center;
+		}
+	
+
+		nav {
+			ul {
+				li {
+					display: inline-block;
+					position: relative;
+					padding: 5px 5px 5px 5px;
+					margin-left: 10px;
+					cursor: pointer;
+					&:hover {
+						background: @lightgray;
+						border: #ccc 1px solid;
+						transition: all 0.2s;
+					}
+				}
+
+
+			}
+
+		}
+
+		ul#pictures {
+			
+			span {
+				opacity: 1;
+
+			}
+			li {
+				cursor: pointer;
+				.column(3);
+				padding-bottom: 35px;
+				&:hover figcaption {
+					opacity: 1;
+					transition: all 0.5s;
+				}
+
+			}
+
+			figure {
+				margin: 0;
+				padding: 0;
+				position: relative;
+
+				figcaption {
+					background: rgba(0,0,0,0.5);
+					color: white;
+					display: table;
+					left: 0;
+					position: absolute;
+					top: 0;
+					width: 274px;
+					height: 200px;
+					opacity: 0;
+						span {
+							display: table-cell;
+							text-align: center;
+							vertical-align: middle;		
+
+						}
+				}
+			}
+		}
+}
+
+.mobile_options {
+	display: none;
+	text-align: center;
+	color: @white;
+}
+
+.column12 {
+	.column(12);
+	background: @light-orange;
+	&:hover {
+		background: @orange;
+	}
+}
+
+
+//-------------------------------------------------------------------------
+// MEDIA QUERIES 
+//----------------------------
+// Portrait tablet and small desktops
+
+//----------------------------
+// Portfolio.html
+//----------------------------
+
+@media (max-width: 1113px) {
+
+section#Portfolio {
+
+	ul#pictures {
+			
+			span {
+
+			}
+			li {
+				.column(4);
+			}
+
+		}
+}
+
+}
+
+
+@media (max-width: 840px) {
+	
+
+	section#OurWorks {
+	height: auto;
+	h1 {
+		padding-top: 25px;
+		font-size: @large-size - 1px;
+	}
+	p {
+		padding-bottom: 25px;
+	}
+
+}
+
+
+	section#Portfolio {
+
+		h2 {
+		font-size: @large-size - 4px;
+		}
+		p {
+
+		}
+		ul#pictures {
+			
+			span {
+
+			}
+			li {
+				.column(6);
+
+			}
+
+		}
+}
+
+}
+
+@media (max-width: 673px) {
+	
+
+section#Portfolio {
+
+		nav.options {
+			display:none;
+		} 
+
+		nav.mobile_options {
+			display: block;
+			margin: 0 auto;
+
+			ul {
+				li:last-child {
+					margin-bottom: 15px;
+				}
+			}
+		}
+	}
+	
+}
+
+
+@media (max-width: 567px) {
+
+section#Portfolio {
+
+		ul#pictures {
+			
+			span {
+
+			}
+			li {
+				.push(2.5);
+				
+			}
+
+		}
+}
+
+}
+
+
+
+@media (max-width: 320px) {
+
+
+section#Portfolio {
+
+		ul#pictures {
+			
+			li {
+				margin-left: 2%;
+				
+			}
+
+		}
+}
+
+}

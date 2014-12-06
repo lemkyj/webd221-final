@@ -1,0 +1,229 @@
+
+
+// ------------------------------------------------------------------------------------------
+// ABOUT PAGE 
+// ---------------------------
+
+	// section WhoWeAre
+	// -----------------
+
+section#WhoWeAre {
+	height: 450px;
+	// background: @light-orange;
+	background: url("../img/bg6.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	text-align: center;
+
+	p {
+		color: @white;
+		font-size: @normal-size;
+
+	}
+	h1 {
+		padding-top: 120px;
+		margin-bottom: 25px;
+	
+	}
+}
+
+
+	// section AboutUs
+	// -----------------
+
+section#AboutUs {
+	height: auto;
+	padding-bottom: 15px;
+	h2 {
+		padding-top: 40px;
+		padding-bottom: 35px;
+	}
+	p {
+		font-size: @normal-size;
+		max-width: 1155px;
+		margin: 0 auto;
+		text-align: center;
+	}
+}
+
+
+	// section Team
+	// -----------------
+
+section#Team {
+	background: @white;
+	height: 100%;
+
+	h2 {
+		padding-top: 35px;
+		padding-bottom: 40px;
+	}
+
+	ul {
+	text-align:center;
+		li {
+			.column(3);
+
+			h3 {
+				padding: 10px 0 8px 0;
+				margin: 0;
+			}
+
+			h4 {
+				margin: 0;
+				padding: 0 0 30px 0;
+			}
+
+			p {
+				padding-bottom: 55px;
+
+			}
+		}
+	}
+}
+
+	// section OurMission
+	// -----------------
+
+section#OurMission {
+	height: 100%;
+}
+
+.leftbox {
+	.column(6);
+
+	h5 {
+		padding-bottom: 0;
+		margin-bottom: 0;
+	}
+	p {
+		line-height: 125%;
+		&:last-child {
+			padding-bottom: 75px;
+		}
+	}
+
+}
+
+.rightbox {
+	.column(6);
+	img {
+		width: 100%;
+		padding-top: 45px;
+	}
+}
+
+
+
+//-------------------------------------------------------------------------
+// MEDIA QUERIES 
+//----------------------------
+// Portrait tablet and small desktops
+
+//----------------------------
+// About.html
+//----------------------------
+
+@media (max-width: 806px) {
+
+
+	section#WhoWeAre {
+	height: auto;
+	padding-bottom: 30px;
+	 	h1 {
+		padding-top: 25px;
+		font-size: @large-size - 1px;
+		}
+		p {
+		color: @white;
+		font-size: @normal-size;
+
+	}
+	h1 {
+		padding-top: 80px;
+		margin-bottom: 25px;
+	
+	}
+}
+
+section#AboutUs {
+		h2 {
+			font-size: @large-size - 3px;
+		}
+}
+
+
+section#Team {
+	margin-top: 100px;
+	height: auto;
+
+	h2 {
+		padding-top: 35px;
+		padding-bottom: 40px;
+		font-size: @large-size - 3px;
+
+	}
+
+	ul {
+
+		li {
+			.column(6);
+		}
+	}
+}
+
+section#OurMission {
+	height: auto;
+
+
+}
+
+.leftbox {
+	.column(12);
+
+	h5 {
+		padding-bottom: 15px;
+		font-size: @large-size - 3px;
+		text-align: center;
+	}
+	p {
+		line-height: 125%;
+		text-align: center;
+		&:last-child {
+			padding-bottom: 0px;
+		}
+	}
+
+}
+
+.rightbox {
+	.column(12);
+	img {
+		padding-bottom: 40px;
+	}
+}
+
+
+}
+
+
+@media (max-width: 480px) {
+	
+	section#Team {
+
+		h2 {
+
+		}
+
+		ul {
+
+			li {
+				.column(12);
+
+			}
+		}
+	}
+
+}
